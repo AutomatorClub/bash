@@ -10,14 +10,30 @@ Overall, the Linux Shell Enhancement Project aims to make the Linux command-line
 
 # Install
 
+## curl
+
 ```
 curl -sL  bash.automator.club | sh
 ```
 
+This is a Unix-based terminal command that downloads a shell script from the URL "bash.automator.club" and executes it in the shell interpreter.
 * "curl" is a command-line tool for transferring data from or to a server. It is commonly used to retrieve the contents of a URL.
 * The "-s" option stands for "silent mode", which means that no progress or error messages will be shown during the download.
 * The "-L" option instructs curl to follow redirects, so that if the server returns a redirect response (HTTP 3xx status code), curl will automatically request the new location.
 * The vertical bar "|" is called a "pipe", which is a way to chain two commands together. In this case, the output of "curl" will be piped into the next command.
+"sh" is a command that runs a shell script. When the pipe is executed, the contents of the URL will be passed to the shell script interpreter, which will execute the commands contained in the script.
+
+## wget
+
+```
+wget -qO- bash.automator.club | sh
+```
+
+This is a Unix-based terminal command that downloads a shell script from the URL "bash.automator.club" and executes it in the shell interpreter.
+* "wget" is a command-line tool for downloading files from the web.
+* The "-q" option stands for "quiet mode", which means that no progress or error messages will be shown during the download.
+* The "-O-" option instructs wget to write the output to the standard output (stdout) instead of saving it to a file.
+* The vertical bar "|" is called a "pipe", which is a way to chain two commands together. In this case, the output of "wget" will be piped into the next command.
 "sh" is a command that runs a shell script. When the pipe is executed, the contents of the URL will be passed to the shell script interpreter, which will execute the commands contained in the script.
 
 This command will create entries in your ~/.bashrc file

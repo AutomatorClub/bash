@@ -1,0 +1,2 @@
+# bash
+Customized bash environment

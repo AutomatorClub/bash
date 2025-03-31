@@ -27,6 +27,8 @@ This is a Unix-based terminal command that downloads a shell script from the URL
 
 ```
 wget -qO- bash.automator.club | sh
+# or via direct download
+bash -c "$(wget -qLO - https://raw.githubusercontent.com/AutomatorClub/bash/refs/heads/main/install.sh)"
 ```
 
 This is a Unix-based terminal command that downloads a shell script from the URL "bash.automator.club" and executes it in the shell interpreter.
